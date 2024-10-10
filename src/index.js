@@ -1,3 +1,12 @@
-const target = document.createElement('div')
-target.innerHTML = "hello world"
-document.body.appendChild(target)
+import React from 'react'
+import ReactDOM  from "react-dom/client"
+import App from "./App"
+
+const targetDom = document.getElementById('app')
+debugger
+const root = ReactDOM.createRoot(targetDom)
+root.render(
+    <React.StrictMode>
+        <App />
+    </React.StrictMode>
+)
